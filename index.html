@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hein Htet Aung| Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-container">
+            <img src="Hein.jpg" alt="Hein Htet のプロフィール写真" class="profile-photo">
+            <h1>Hein Htet Aung</h1>
+            <p class="tagline"> IT Passport / FE / JLPT N2</p>
+        </div>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 自己紹介 -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                はじめまして。Hein Htet Aung(ヘイン テッ アウン）と申します。私はミャンマーで中学・高校・大学を卒業後、より専門的なスキルを身につけるために来日しました。現
+在は日本ITビジネスカレッジの国際ビジネス学科で学びながら、ITシステムがどのように社会で役立っ
+ているかを日々研究しています。私は、最後までやり遂げる力と新しいことを学ぶ意欲があります。ITの
+仕事に興味があり、自分で一生懸命勉強しました。その結果、<strong>ITパスポート</strong>と<strong>基本情報技術者試験</strong>に合
+格することができました。これからも新しい技術をどんどん吸収して、貴社に貢献したいです。私はコン
+ビニ（ローソン）でアルバイトをしています。色々な国籍のお客さまやスタッフと話をすることで、相手の気
+持ちを考えて動くことを学びました。プログラマーの仕事でも、チームのメンバーやお客様の話をよく聞
+き、円滑に仕事を進めることができます.<strong>日本語能力試験のN2</strong>を持っています。
+            </p>
+            <p>
+                私は、ITカレッジでプログラミングやシステム開発の基礎を学びました。学校では、JavaやJavascript、データベースなどを勉強し、簡単なシステムを作
+る課題にも取り組みました。自分が書いたプログラムが動いたとき、とてもうれしく、ITの技術で人の役に立ちたいと思うようになり、IT業界を志望しまし
+た。私はまだ実務経験がありませが、学校で学んだ基礎力と、自分で学ぶ姿勢には自信があります.入社後は、早く仕事を覚えて、チームに貢献でき
+るエンジニアに成長したいです。
+            </p>
+            
+        </div>
+    </section>
+
+    <!-- スキル -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Java (Swing, JDBC)</li>
+                    <li>HTML / CSS / JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>SQL (SELECT, INSERT, UPDATE, DELETE)</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git / GitHub</li>
+                    <li>Eclipse</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Language</h3>
+                <ul>
+                    <li>Japanese (JLPT N2)</li>
+                    <li>English</li>
+                    <li>Burmese (Native)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクト -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>社員管理システム (Employee Management System)</h3>
+            <p class="project-subtitle">Java / Swing / MySQL / JDBC</p>
+            <p>
+                社員情報を管理するためのデスクトップアプリケーションです。
+                管理者（ADMIN）と社員（STAFF）の2つのロールに分かれ、それぞれ異なる機能を提供します。
+            </p>
+            <h4>主な機能</h4>
+            <ul>
+                <li><strong>ログイン画面:</strong> 管理者（ADMIN）または社員（STAFF）を選択してログイン</li>
+                <li><strong>管理者機能:</strong> 全社員の一覧表示、名前で検索、社員情報の更新（部署変更）、社員の削除</li>
+                <li><strong>社員機能:</strong> 社員ログイン、新規社員登録、給与計算</li>
+            </ul>
+            <h4>学んだこと</h4>
+            <ul>
+                <li>Java Swingでの画面作成（JFrame, JPanel, JButton, JOptionPaneなど）</li>
+                <li>ActionListenerを使ったイベント処理</li>
+                <li>JDBCを使ったデータベース操作（SELECT, INSERT, UPDATE, DELETE）</li>
+                <li>PreparedStatementで安全にSQLを実行する方法</li>
+                <li>入力チェック（バリデーション）の大切さ</li>
+                <li>クラス分け（設計）を意識するとコードが読みやすくなること</li>
+            </ul>
+            <h4>課題と解決方法</h4>
+            <p>
+                <strong>課題1:</strong> データベースに接続できないことがあった。<br>
+                <strong>解決方法:</strong> GetConnectionクラスを作って接続処理を1か所にまとめ、try-catchでClassNotFoundExceptionとSQLExceptionを分けて処理した。
+            </p>
+            <p>
+                <strong>課題2:</strong> 勤務時間が空のまま計算するとエラーになった。<br>
+                <strong>解決方法:</strong> working_hour.isEmpty()でチェックし、「Please enter Working Hour」とメッセージを出して処理を止めるようにした。
+            </p>
+            <a href="https://github.com/heinhtet998/EmployeeManagementSystem/tree/main/EmployeeManagementSystem/src/myproject" target="_blank" class="btn">GitHubで見る</a>
+        </div>
+    </section>
+
+    <!-- コンタクト -->
+    <section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <h2 class="section-title">Contact</h2>
+      
+      <div class="contact-list">
+        <p>
+          GitHub:
+          <a href="https://github.com/heinhtet998" target="_blank" rel="noopener">
+            https://github.com/heinhtet998
+          </a>
+        </p>
+
+        <p>
+          Gmail:
+          <a href="mailto:heinhtet1748@gmail.com">
+            heinhtet1748@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2026 Hein Htet Aung. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
